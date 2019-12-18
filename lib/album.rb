@@ -44,4 +44,8 @@ class Album
   def delete()
     @@albums.delete(self.id)
   end
+
+  def self.search(name)
+    @@albums.values().select { |element| /#{name}/i.match? element.name}
+  end
 end

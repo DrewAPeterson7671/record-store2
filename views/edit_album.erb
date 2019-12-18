@@ -4,14 +4,14 @@
   <input name="_method" type="hidden" value="patch">
 
   <label for="name">Rename album</label>
-  <input id="name" name="name" type="text">
+  <input id="name" name="name" type="text" value="<%= @album.name %>">
 
   <label for="artist">Edit artist</label>
-  <input id="artist" name="artist" type="text">
+  <input id="artist" name="artist" type="text" value="<%= @album.artist %>">
   <label for="genre">Edit genre</label>
-  <input id="genre" name="genre" type="text">
+  <input id="genre" name="genre" type="text" value="<%= @album.genre %>">
   <label for="year">Edit year</label>
-  <input id="year" name="year" type="text">
+  <input id="year" name="year" type="text" value="<%= @album.year %>">
 
   <button type="submit">Update</button>
 </form>
